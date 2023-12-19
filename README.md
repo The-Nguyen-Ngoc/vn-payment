@@ -127,14 +127,14 @@ routes.get('/payment/callback', (req, res) => {
   onepayIntl.verifyReturnUrl(query).then(results => {
     if (results.isSucceed) {
       res.render('success', {
-        title: 'Nau Store - Thank You',
+        title: 'Thế TEST - Thank You',
         orderId: results.orderId,
         price: results.price,
         message: results.message,
       });
     } else {
       res.render('errors', {
-        title: 'Nau Store - Payment Errors',
+        title: 'Thế TEST - Payment Errors',
         message: results.message,
       });
     }

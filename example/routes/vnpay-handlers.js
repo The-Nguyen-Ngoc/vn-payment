@@ -3,8 +3,8 @@ import { VNPay } from 'vn-payments';
 /* eslint-disable no-param-reassign */
 const TEST_CONFIG = VNPay.TEST_CONFIG;
 const vnpay = new VNPay({
-	paymentGateway: TEST_CONFIG.paymentGateway,
-	merchant: TEST_CONFIG.merchant,
+	paymentGateway: 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html',
+	merchant: 'CTTVNP01',
 	secureSecret: TEST_CONFIG.secureSecret,
 });
 

@@ -17,7 +17,7 @@ const routes = Router();
  * GET home page with the mock shopping cart
  */
 routes.get('/', (req, res) => {
-	res.render('index', { title: 'Nau Store' });
+	res.render('index', { title: 'Thế TEST' });
 });
 
 /**
@@ -25,7 +25,7 @@ routes.get('/', (req, res) => {
  */
 routes.get('/success', (req, res) => {
 	res.render('result', {
-		title: 'Nau Store',
+		title: 'Thế TEST',
 		isSucceed: true,
 		email: 'tu.nguyen@naustud.io',
 		orderId: '6433',
@@ -35,7 +35,7 @@ routes.get('/success', (req, res) => {
 
 routes.get('/fail', (req, res) => {
 	res.render('result', {
-		title: 'Nau Store',
+		title: 'Thế TEST',
 		email: 'tu.nguyen@naustud.io',
 		orderId: '6433',
 		price: '5000000',
@@ -157,7 +157,7 @@ routes.get('/payment/:gateway/callback', (req, res) => {
 	if (asyncFunc) {
 		asyncFunc.then(() => {
 			res.render('result', {
-				title: `Nau Store Payment via ${gateway.toUpperCase()}`,
+				title: `Thế TEST Payment via ${gateway.toUpperCase()}`,
 				isSucceed: res.locals.isSucceed,
 				email: res.locals.email,
 				orderId: res.locals.orderId,

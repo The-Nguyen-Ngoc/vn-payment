@@ -11,15 +11,15 @@ $(function() {
 		var form = document.querySelectorAll('.form')[0].elements;
 
 		if (isChecked) {
-			form.firstname.value = 'Nau';
-			form.lastname.value = 'Dev';
-			form.billingStreet.value = '187 Dien Bien Phu, Da Kao Ward';
-			form.billingCity.value = '01'; // district
+			form.firstname.value = 'The';
+			form.lastname.value = 'Nguyen';
+			form.billingStreet.value = '194 Tran Quang Khai';
+			form.billingCity.value = '123'; // district
 			form.billingCountry.value = 'VN';
 			form.billingPostCode.value = '700000';
-			form.billingStateProvince.value = 'Hồ Chí Minh';
-			form.email.value = 'dev@naustud.io';
-			form.amount.value = '900000';
+			form.billingStateProvince.value = 'Hà Nội';
+			form.email.value = 'the123456@gmail.com';
+			form.amount.value = '12345';
 			form.phoneNumber.value = '0123456789';
 		} else {
 			form.firstname.value = '';
